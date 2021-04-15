@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="judul1">Welcome to Apps!</string>
+    <string name="judul2">Exercise 1, Faysal Fadel Maulana 20190140097, Email: admin@mail.com, Pass: 123456 </string>
+
+    <!--  Sign in  -->
+    <string name="judul3">Hello, Wellcome!</string>
+
+    <string name="bSignUp">SIGN UP</string>
+    <string name="bSignIn">SIGN IN</string>
+    <string name="tEmail">Your Email</string>
+    <string name="tPassword">Password</string>
+    <string name="any">or Sign in with</string>
+
+    <!--  Sign up  -->
+    <string name="judul4">Register Your Account</string>
+    <string name="eNama">Name</string>
+    <string name="eEmail">Email</string>
+    <string name="eAlamat">Address</string>
+    <string name="ePass">Password</string>
+    <string name="erepass">Repeat Password</string>
+    <string name="lk">Male</string>
+    <string name="pr">Female</string>
+    <string name="is">Islam</string>
+    <string name="kat">Catholic</string>
+    <string name="kris">Christian</string>
+    <string name="Hin">Hindu</string>
+    <string name="Bud">Buddha</string>
+    <string name="kong">Konghucu</string>
+    <string name="lain">Others</string>
+    <string name="regis">Register</string>
+    <string name="batal">Back</string>
+
+    <!--  Home  -->
+    <string name="datakontak">Data Kontak</string>
+
+    <!--  Detail Kontak  -->
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="lihatdata">Lihat Data</string>
+    <string name="lihatnotel">Lihat Nomor</string>
+</resources>
