@@ -5,9 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListViewAdapter extends BaseAdapter {
     Context mContext;
@@ -56,5 +58,38 @@ public class ListViewAdapter extends BaseAdapter {
         }
         holder.name.setText(Home.classNamaArrayList.get(i).getNama());
         return view;
+    }
+
+    public Filter getFilter(){
+        Filter filter = new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                FilterResults filterResults = new FilterResults();
+                if(constraint == null||constraint.length()==0){
+                    filterResults.count = arrayList.size();
+                    filterResults.values = arrayList;
+                }
+                else {
+                    List<ClassNama> resultModel = new ArrayList<>();
+                    String searchString = constraint.toString().toUpperCase();
+
+                    for(ClassNama itemModel:arrayList){
+                        if (itemModel.getNama().toUpperCase().contains(searchString.toUpperCase())){
+                            resultModel.add(itemModel);
+                        }
+                        filterResults.count = resultModel.size();
+                        filterResults.values = resultModel;
+                    }
+                }
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                Home.classNamaArrayList = (ArrayList<ClassNama>) results.values;
+                notifyDataSetChanged();
+            }
+        };
+        return filter;
     }
 }

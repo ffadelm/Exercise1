@@ -68,27 +68,33 @@ public class SignUp extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(edtNama.getText().toString().length()==0){
-                    edtNama.setError("Nama diperlukan!");
+                    edtNama.setError("Name required!");
                 }
 
                 else if(edtAlamat.getText().toString().length()==0){
-                    edtAlamat.setError("Alamat diperlukan!");
+                    edtAlamat.setError("Address Required!");
                 }
 
                 else if(edtEmail.getText().toString().length()==0){
-                    edtEmail.setError("Email diperlukan!");
+                    edtEmail.setError("Email Required!");
                 }
 
                 else if(edtPass.getText().toString().length()==0){
-                    edtPass.setError("Password diperlukan!");
+                    edtPass.setError("Password Required!");
                 }
-                else if(edtPass.getText().toString().length()!=6){
-                    edtPass.setError("Password length is less than 6 characters");
+                else if(edtPass.getText().toString().length()<6){
+                    edtPass.setError("Password must be more than 6 characters");
                 }
 
-                else if(edtRePass.getText().toString().length()==0 || edtRePass.equals(edtPass)){
+                else if(edtRePass.getText().toString().length()==0 && edtRePass.equals(edtPass)){
                     edtRePass.setError("Please Repeat the Password!");
                 }
+
+                if(!(rbLK.isChecked() || rbPR.isChecked()) && !(rbIs.isChecked() || rbKat.isChecked() || rbKris.isChecked() ||
+                        rbHin.isChecked() || rbBud.isChecked() || rbKong.isChecked() || rbLain.isChecked())){
+                    Toast.makeText(getApplicationContext(), "All data must be filled!!", Toast.LENGTH_LONG).show();
+                }
+
                 else if(edtPass.length() != 0 && edtAlamat.length() != 0 && edtEmail.length() != 0 && edtPass.length() !=0 && edtRePass.length() == 6 && edtRePass.getText() == edtRePass.getText()){
                     Toast.makeText(getApplicationContext(), "Registrasi Success!",
                             Toast.LENGTH_SHORT).show();

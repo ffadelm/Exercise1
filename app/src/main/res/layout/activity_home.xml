@@ -10,6 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
         android:id="@+id/textView6"
         android:text="@string/datakontak"
         android:layout_gravity="center_horizontal"
@@ -17,18 +18,27 @@
         android:textColor="@color/black"
         android:textStyle="bold"/>
 
-    <SearchView
+    <EditText
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:queryHint="Search Name"
-        android:iconifiedByDefault="false"
-        android:id="@+id/searchBar"/>
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:ems="10"
+        android:textSize="10pt"
+        android:hint="@string/SearchName"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_search"
+        android:background="@color/white"
+
+        />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/listKontak"
         android:divider="@color/pink"
         android:dividerHeight="1dp"/>

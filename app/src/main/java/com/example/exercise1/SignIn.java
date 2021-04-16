@@ -41,11 +41,11 @@ public class SignIn extends AppCompatActivity {
                     startActivity(i);
                 }
                 else if(edEmail.getText().toString().length()==0 && edPassword.getText().toString().length()==0){
-                    edEmail.setError("Email kosong");
-                    edPassword.setError("Password kosong");
+                    edEmail.setError("Email is Empty");
+                    edPassword.setError("Password is Empty");
                 }
                 else if(edPassword.getText().toString().length()<6){
-                    edPassword.setError("Password Have 6 Character");
+                    edPassword.setError("Password Have 6 Character or more");
                 }
                 else {
                     Toast.makeText(getApplicationContext(),

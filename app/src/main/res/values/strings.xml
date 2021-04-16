@@ -32,13 +32,14 @@
     <string name="batal">Back</string>
 
     <!--  Home  -->
-    <string name="datakontak">Data Kontak</string>
+    <string name="datakontak">Data Contact</string>
+    <string name="SearchName">Search Name</string>
 
     <!--  Detail Kontak  -->
-    <string name="detailkontak">Detail Kontak</string>
-    <string name="nama">Nama</string>
-    <string name="notel">Nomor Telepon</string>
-    <string name="namaitem">Nama Item</string>
-    <string name="lihatdata">Lihat Data</string>
-    <string name="lihatnotel">Lihat Nomor</string>
+    <string name="detailkontak">Detail Contact</string>
+    <string name="nama">Name</string>
+    <string name="notel">Phone Number</string>
+    <string name="namaitem">Name Item</string>
+    <string name="lihatdata">View Data</string>
+    <string name="lihatnotel">View Number</string>
 </resources>
