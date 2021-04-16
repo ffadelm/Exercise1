@@ -92,7 +92,7 @@ public class Home extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
-            case R.id.mnedit:
+            case R.id.mnnomor:
                 switch (bundle.getString("a")){
                     case "Anang":
                         Toast.makeText(getApplicationContext(), "081234567890",Toast.LENGTH_LONG).show();
